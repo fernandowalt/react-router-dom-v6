@@ -11,6 +11,7 @@ export default function Invoices() {
     <div style={{ display: 'flex' }}>
       <nav style={{ borderRight: 'solid 1px', padding: '1rem' }}>
         <input
+        placeholder={'buscar factura'}
           value={searchParams.get('filter') || ''}
           onChange={(event) => {
             const filter = event.target.value;
